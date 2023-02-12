@@ -1,0 +1,1 @@
+get_highest_resolution()

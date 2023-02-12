@@ -1,0 +1,81 @@
+
+<!doctype html>
+<html lang="en" class="h-100">
+
+  <head>
+    <title>Scrap Go YouTube Downloader</title>
+    <link rel="Shorcut icon" href="https://drive.google.com/uc?id=1leVbT5n-0pJyJfUl63dM0PwiLir855o_">
+
+      <!--img src="Logo.png"style="float:right;width:500px;height:500px;"-->
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://drive.google.com/uc?id=1s07lzDNdj4eos01l1Albcwk-fr3VhLQB" rel="stylesheet">
+
+    <!-- Favicons -->
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="https://drive.google.com/uc?id=1UvV_BWauFyYB2SZYiJXn816Ma-x4FMVF" rel="stylesheet">
+  </head>
+  <body class="d-flex h-100 text-center text-white bg-dark">
+  
+
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+
+  <main class="px-3">
+    <img src="https://drive.google.com/uc?id=1vau4QzFhfdQHyYL6wG0bcbVfXis_fFn8" width="200">
+    <p class="lead mt-5">
+      <h3>Download Playlist</h3>
+      <p class="lead mt-5"></p>
+      <div style="height: 300px; overflow: auto">
+        <table class="table table-bordered table-striped mb-0">
+          <table class="table table-dark" style="height: 300px">
+          <thead>
+            <tr>
+              <!--th style="text-align:center" scope="col">#</th-->
+              <th style="text-align:center" scope="col">Link</th>
+            </tr>
+          </thead>
+          <tbody>           
+          {% for key,value in Playlist_data.items() %}
+          <tr>
+            <!--td style="text-align:center">{{key}}</td-->
+            <td style="text-align:center"><a href={{value}}>{{key}}</a> </td>
+          </tr>
+          {%endfor%}
+        </tbody>
+        </table>
+        </table>
+
+      </div>
+
+    </p>
+
+  </main>
+  <footer class="mt-auto text-white-50">
+    <p></p>
+  </footer>
+</div>
+
+
+
+  </body>
+</html>
